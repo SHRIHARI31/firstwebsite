@@ -1,0 +1,241 @@
+.header {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    padding: 0 10px 0;
+    border-radius: 10px;
+
+    font-weight: bolder;
+}
+
+.img-div {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.img {
+    position: relative;
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/backgrounds/cave-star.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.linear-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.474));
+    z-index: 1;
+    top: 0;
+}
+
+.a-div {
+    max-width: 340px !important;
+    width: 400px;
+    height: 200px;
+    background-image: url('./img/backgrounds/main-page-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px purple;
+    animation: a-div infinite 3s ease-in-out;
+    min-width: 140px !important;
+
+}
+
+@keyframes a-div {
+    10% {
+        box-shadow: 10 10 10px purple;
+        transform: scale(1.01);
+    }
+
+    20% {
+        box-shadow: 0 0 2px purple;
+    }
+
+    30% {
+        box-shadow: 0 0 3px purple;
+    }
+
+    40% {
+        box-shadow: 0 0 4px purple;
+    }
+
+    50% {
+        box-shadow: 0 0 5px purple;
+    }
+
+
+}
+
+.a-div>button {
+    border-radius: 10px;
+    background-color: rgba(38, 66, 247, 0.443);
+    box-shadow: inset 0 0 1px;
+    font-size: larger;
+}
+
+.a-div>button>span>a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.a-div>span {
+    background-color: rgba(8, 132, 255, 0.168);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+
+}
+
+.down-btn {
+    border: none;
+    background-color: none;
+
+}
+
+/*common heading*/
+.com-heading {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: large;
+    background-color: black;
+    box-shadow: 0 0 2px white;
+    animation: common infinite 2s;
+}
+
+@keyframes common {
+    10% {
+        transform: scale(0.9);
+        background-color: rgb(134, 125, 125);
+    }
+
+}
+
+/*gadget section*/
+.gadgets {
+    height: fit-content;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    background-image: linear-gradient(45deg, rgb(191, 44, 211), rgb(120, 39, 161), rgb(113, 123, 169),
+            rgb(37, 88, 228), rgb(34, 27, 167));
+}
+
+/*gallery*/
+.gallery {
+    width: 100%;
+    height: fit-content;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    background-image: linear-gradient(45deg, rgb(191, 44, 211), rgb(120, 39, 161), rgb(113, 123, 169),
+            rgb(37, 88, 228), rgb(34, 27, 167));
+}
+
+
+.grid-img>img {
+    margin-top: 20px;
+    transition: .2s ease-in-out;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.grid-img>img:hover {
+    transform: scale(1.02);
+}
+
+
+/*footer*/
+footer {
+    background-color: rgb(41, 39, 39);
+    width: 100%;
+    height: fit-content;
+    display: block;
+    color: white !important;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.footer-div {
+    margin-top: 10px;
+    transition: ease-in-out;
+    font-size: 12px !important;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.footer-div:hover {
+    transform: scale(1.01)
+}
+
+.footer-heading {
+    font-size: 23px !important;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    background-color: black !important;
+    border-radius: 10px;
+}
+
+.footer-heading-block {
+    margin-bottom: 35px !important;
+
+}
+
+
+/*media querries */
+@media screen and (max-width:768px) {
+    .a-div {
+        width: 240px;
+
+    }
+
+
+
+    .a-div>button>span>a {
+        color: white;
+        font-size: medium;
+    }
+
+    .card {
+        width: 200px !important;
+    }
+
+    .footer-div>i>a {
+        font-size: small;
+    }
+
+    .footer-heading-block {
+        margin-top: 15px !important;
+
+    }
+    .footer-div
+    {
+        margin-top: 0 !important;
+        margin: 20px;
+    }
+}
