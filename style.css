@@ -184,9 +184,10 @@ footer {
 .footer-div {
     margin-top: 10px;
     transition: ease-in-out;
-    font-size: 12px !important;
+    font-size: 6px !important;
     letter-spacing: 1.5px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .footer-div:hover {
