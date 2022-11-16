@@ -239,3 +239,18 @@ footer {
         margin: 20px;
     }
 }
+.main-page-div
+{
+    position: relative;
+    display: none;
+}
+.overlay-debit{
+    height: 100%;
+    position: absolute;
+    width: 100;
+    background-color: black;
+    
+}
+.debit-h1{
+    color: white !important;
+}
